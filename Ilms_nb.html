@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<style>
+    body {
+      background-image: url("https://www.uzdaily.uz/storage/img/universities/tuit-tashkent.jpg");
+      background-size: cover;
+    }
+
+    .registration-form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: rgba(256, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .registration-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+</style>
+<div class="registration-container">
+    <form class="registration-form">
+        <h1> Nb ariza bo'limi</h1>
+        <div class="form-group">
+            <label for="name">Talabaning isimi :</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="surname"> Talabaning familyasi:</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name"> Talabaning guruhi:</label>
+            <input type="text" name="guruh" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Nb tushgan kun:</label>
+            <input type="date" name="Nb" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Nb sababi:</label>
+            <textarea name="oqituvchi" id="" cols="40" rows="4"> </textarea>
+        </div>
+
+        <input type="submit" value="Jo'natish">
+        <img src="https://static.tuit.uz/uploads/1/W73eM8T-hn5cLRoa_rQWKshn3eUutXvm.png" alt="Arka Plan Resmi"
+             style="max-width: 400px; border-radius: 5px;">
+    </form>
+</div>
+
+</body>
+
+</html>

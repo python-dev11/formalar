@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ro'yxatdan o'tish </title>
+</head>
+<body>
+<style>
+    body {
+  background-image: url("https://i0.wp.com/eshowmagazine.com/wp-content/uploads/expertos.jpg");
+  background-size: cover;
+}
+      .registration-form {
+      max-width: 550px;
+      margin: 0 auto;
+      background-color: rgba(256, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input[type="submit"] {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+     .form-group {
+      margin-bottom: 20px;
+    }
+     label {
+      font-weight: bold;
+    }
+</style>
+
+<form class="registration-form">
+    <h1>Ro'yxatdan o'tish</h1>
+
+    <fieldset>
+        <div class="form-group">
+            <legend><h3 style="color: green"> shaxsiy malumotlar </h3></legend>
+            <label for="ismingiz">Ismingiz:</label>
+            <input type="text" placeholder="ismingizni kiriting:" required>
+        </div>
+        <p>
+            <label for="Familya">Familyangiz:</label>
+            <input type="text" placeholder="Familyangiz kiriting:">
+        </p>
+        <p>
+            <label for="birth">tugilgan sana:</label>
+            <input type="date">
+        </p>
+        <p>
+            <label for="password">parol:</label>
+            <input type="password" id="password" name="password" required>
+        </p>
+        <p>
+            <label for="jins">jinsingiz:</label><br>
+            <input type="radio" name="jins">Erkak
+            <input type="radio" name="jins">Ayol
+        </p>
+    </fieldset>
+    <fieldset>
+        <div class="form-group">
+            <legend><h3 style="color: green"> Aloqa malumotlari </h3></legend>
+            <label for="Email"> Email:</label>
+            <input type="email" placeholder="exa@gmail.com">
+        </div>
+        <p>
+            <label for="tel"> Tel:</label>
+            <input type="tel" placeholder="+9989x xxx xx xx">
+        </p>
+        <p>
+            <label for="telegram"> Telegram:</label>
+            <input type="text" placeholder="Telegram nikingizni kiriting">
+        </p>
+        <p>
+            <label for="Adress" style="color: red"> To'liq manzilingizni kiriting </label><br>
+            <textarea name="manzil" id="" cols="40" rows="4"> </textarea>
+        </p>
+    </fieldset>
+    <fieldset>
+        <div class="form-group">
+            <legend><h3 style="color: green"> Qo'shimcha ma'lumotlar:</h3></legend>
+            <label for="yosh">Yoshingizni kiriting: </label>
+            <input type="number" min="18" max="60" name="yosh">
+        </div>
+        <p>
+            <label for="rasm">Rasmingiz</label>
+            <input type="file" name="rasm">
+        </p>
+        <p>
+            <label for="oliy talim">oliygoh</label>
+            <select name="otm">
+                <option> Qardu</option>
+                <option> Namdu</option>
+                <option> Samdu</option>
+                <option> Tatu</option>
+            </select>
+        </p>
+    </fieldset>
+    <input type="submit" value="Ro'yhatdan o'tish">
+</form>
+
+</body>
+</html>
